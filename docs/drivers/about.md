@@ -4,7 +4,7 @@ A driver instructs Osmos on how to connect to a specific data store. Drivers are
 
 ## Supported drivers
 
-At this time, Osmos comes bundled with two drivers:
+At this time, Osmos comes bundled with four drivers:
 
 - **[Memory](https://github.com/mtabini/osmos/blob/master/lib/drivers/memory.js)** (`Osmos.drivers.Memory`) is a simple, unoptimized memory-based data store that Osmos uses primarily for unit testing. It is not meant for production use, but it can be handy for running tests.
 
