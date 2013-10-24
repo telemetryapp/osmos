@@ -6,13 +6,13 @@ A driver instructs Osmos on how to connect to a specific data store. Drivers are
 
 At this time, Osmos comes bundled with four drivers:
 
-- **[Memory](https://github.com/mtabini/osmos/blob/master/lib/drivers/memory.js)** (`Osmos.drivers.Memory`) is a simple, unoptimized memory-based data store that Osmos uses primarily for unit testing. It is not meant for production use, but it can be handy for running tests.
+- **[Memory](https://github.com/mtabini/osmos/blob/v0lib/drivers/memory.js)** (`Osmos.drivers.Memory`) is a simple, unoptimized memory-based data store that Osmos uses primarily for unit testing. It is not meant for production use, but it can be handy for running tests.
 
-- **[Redis](https://github.com/mtabini/osmos/blob/master/docs/drivers/redis.md)** (`Osmos.drivers.Redis`) allows mapping of documents to [Redis](http://redis.io) hashes.
+- **[Redis](https://github.com/mtabini/osmos/blob/v0docs/drivers/redis.md)** (`Osmos.drivers.Redis`) allows mapping of documents to [Redis](http://redis.io) hashes.
 
-- **[Riak](https://github.com/mtabini/osmos/blob/master/docs/drivers/riak.md)** (`Osmos.drivers.Riak`) allows interfacing with Basho's [Riak](http://basho.com/riak/) database and supports most of its functionality.
+- **[Riak](https://github.com/mtabini/osmos/blob/v0docs/drivers/riak.md)** (`Osmos.drivers.Riak`) allows interfacing with Basho's [Riak](http://basho.com/riak/) database and supports most of its functionality.
 
-- **[RethinkDB](https://github.com/mtabini/osmos/blob/master/docs/drivers/rethinkdb.md)** (`Osmos.drivers.RethinkDB`) allows interfacing with a [RethinkDB](http://www.rethinkdb.com) cluster, and supports atomic updates on a field-by-field basis (ideal for compatibility with PATCH operations).
+- **[RethinkDB](https://github.com/mtabini/osmos/blob/v0docs/drivers/rethinkdb.md)** (`Osmos.drivers.RethinkDB`) allows interfacing with a [RethinkDB](http://www.rethinkdb.com) cluster, and supports atomic updates on a field-by-field basis (ideal for compatibility with PATCH operations).
 
 All built-in drivers reside in the `Osmos.drivers` namespace.
 
@@ -43,4 +43,4 @@ Writing the basic functionality required for a driver is a fairly trivial operat
 
 For an example of a full-featured driver that digs pretty deep into Osmos's internals, take a peek at the source code for the [Riak driver](https://github.com/mtabini/osmos/tree/master/lib/drivers/riak).
 
-For an in-depth description of the process required for writing a new driver, see [the documentation](https://github.com/mtabini/osmos/blob/master/docs/drivers/drivers.md).
+For an in-depth description of the process required for writing a new driver, see [the documentation](https://github.com/mtabini/osmos/blob/v0docs/drivers/drivers.md).
