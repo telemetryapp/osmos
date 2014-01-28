@@ -226,5 +226,51 @@ describe('The Schema class', function() {
 
     done();
   });
-  
+
+  it('should allow registering additional formats', function (done) {
+    var custom_format_1_data, custom_format_1_schema,
+      custom_format_2_data, custom_format_2_schema;
+
+    Schema.registerFormat('custom_format_1', function (data, schema) {
+      custom_format_1_data = data;
+      custom_format_1_schema = schema;
+
+      return 'custom_format_1_error_message';
+    });
+
+    Schema.registerFormat('custom_format_2', function (data, schema) {
+      custom_format_2_data = data;
+      custom_format_2_schema = schema;
+    });
+
+    var schema = new Schema('marco', {
+      $schema: 'http://json-schema.org/draft-04/schema#',
+      type: 'object',
+      properties: {
+        foo: {
+          type: 'string',
+          format: 'custom_format_1'
+        },
+        foo2: {
+          type: 'string',
+          format: 'custom_format_2'
+        }
+      }
+    });
+
+    schema.validateDocument({foo: 'bar', foo2: 'bar2'}, function (err) {
+      expect(err.errors.length).to.equal(1);
+      expect(err.errors[0].dataPath).to.equal('/foo');
+      expect(err.errors[0].message).to.equal('Format validation failed (custom_format_1_error_message)');
+
+      expect(custom_format_1_data).to.equal('bar');
+      expect(custom_format_1_schema).to.deep.equal({type: 'string', format: 'custom_format_1'});
+
+      expect(custom_format_2_data).to.equal('bar2');
+      expect(custom_format_2_schema).to.deep.equal({type: 'string', format: 'custom_format_2'});
+
+      done();
+    });
+  });
+
 });
