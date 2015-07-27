@@ -28,8 +28,7 @@ create table `datatypes`(
   d2 datetime,
   d3 timestamp,
   d4 time,
-  d5 year(2),
-  d6 year(4),
+  d5 year(4),
 
   c1 char(100),
   c2 char,
