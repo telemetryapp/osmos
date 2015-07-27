@@ -16,7 +16,7 @@
     "mongodb": "~1",
     "mysql": "~2",
     "request": "~2",
-    "rethinkdb": "~1.12",
+    "rethinkdb": "~1.16",
     "tv4": "~1"
   },
   "devDependencies": {
