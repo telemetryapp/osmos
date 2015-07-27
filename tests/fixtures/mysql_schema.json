@@ -1,1 +1,183 @@
-{"type":"object","required":["d3"],"properties":{"pkey":{"type":"integer","minimum":-2147483648,"maximum":2147483647},"v0":{"type":"integer","minimum":-128,"maximum":127},"v1":{"type":"integer","minimum":-32768,"maximum":32767},"v2":{"type":"integer","minimum":-8388608,"maximum":8388607},"v3":{"type":"integer","minimum":-2147483648,"maximum":2147483647},"v4":{"type":"integer","minimum":-9223372036854776000,"maximum":9223372036854776000},"uv0":{"type":"integer","minimum":-128,"maximum":127},"uv1":{"type":"integer","minimum":0,"maximum":65535},"uv2":{"type":"integer","minimum":0,"maximum":16777215},"uv3":{"type":"integer","minimum":0,"maximum":4294967295},"uv4":{"type":"integer","minimum":0,"maximum":18446744073709552000},"n1":{"type":"string","pattern":"/\\-?\\d{0,3}\\.?\\d{0,2}/"},"n2":{"type":"string","pattern":"/\\-?\\d{0,3}\\.?\\d{0,2}/"},"n3":{"type":"number"},"n4":{"type":"number"},"d1":{"type":"string"},"d2":{"type":"string"},"d3":{"type":"string"},"d4":{"type":"string"},"d5":{"type":"integer","minimum":0,"maximum":99999},"c1":{"type":"string","maxLength":100},"c2":{"type":"string","maxLength":1},"c3":{"type":"string","maxLength":100},"c4":{"type":"string","maxLength":100},"c5":{"type":"string","maxLength":1},"c6":{"type":"string","maxLength":100},"c7":{"type":"object","format":"binary","maxLength":1},"c8":{"type":"object","format":"binary","maxLength":2},"b1":{"type":"object","format":"buffer","maxLength":255},"b2":{"type":"object","format":"buffer","maxLength":65535},"b3":{"type":"object","format":"buffer","maxLength":255},"b4":{"type":"object","format":"buffer","maxLength":16777215},"b5":{"type":"object","format":"buffer","maxLength":4294967295},"t1":{"type":"object","maxLength":255},"t2":{"type":"string","maxLength":65535},"t3":{"type":"object","maxLength":255},"t4":{"type":"string","maxLength":16777215},"t5":{"type":"string","maxLength":4294967295},"e":{"type":"string","enum":["v1","v2"]},"s":{"type":"string"}}}
+{
+  "type": "object",
+  "required": [
+    "d3"
+  ],
+  "properties": {
+    "pkey": {
+      "type": "integer",
+      "minimum": -2147483648,
+      "maximum": 2147483647
+    },
+    "v0": {
+      "type": "integer",
+      "minimum": -128,
+      "maximum": 127
+    },
+    "v1": {
+      "type": "integer",
+      "minimum": -32768,
+      "maximum": 32767
+    },
+    "v2": {
+      "type": "integer",
+      "minimum": -8388608,
+      "maximum": 8388607
+    },
+    "v3": {
+      "type": "integer",
+      "minimum": -2147483648,
+      "maximum": 2147483647
+    },
+    "v4": {
+      "type": "integer",
+      "minimum": -9223372036854776000,
+      "maximum": 9223372036854776000
+    },
+    "uv0": {
+      "type": "integer",
+      "minimum": -128,
+      "maximum": 127
+    },
+    "uv1": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 65535
+    },
+    "uv2": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 16777215
+    },
+    "uv3": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "uv4": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 18446744073709552000
+    },
+    "n1": {
+      "type": "string",
+      "pattern": "/\\-?\\d{0,3}\\.?\\d{0,2}/"
+    },
+    "n2": {
+      "type": "string",
+      "pattern": "/\\-?\\d{0,3}\\.?\\d{0,2}/"
+    },
+    "n3": {
+      "type": "number"
+    },
+    "n4": {
+      "type": "number"
+    },
+    "d1": {
+      "type": "string"
+    },
+    "d2": {
+      "type": "string"
+    },
+    "d3": {
+      "type": "string"
+    },
+    "d4": {
+      "type": "string"
+    },
+    "d5": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 99999
+    },
+    "c1": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "c2": {
+      "type": "string",
+      "maxLength": 1
+    },
+    "c3": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "c4": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "c5": {
+      "type": "string",
+      "maxLength": 1
+    },
+    "c6": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "c7": {
+      "type": "object",
+      "format": "binary",
+      "maxLength": 1
+    },
+    "c8": {
+      "type": "object",
+      "format": "binary",
+      "maxLength": 2
+    },
+    "b1": {
+      "type": "object",
+      "format": "buffer",
+      "maxLength": 255
+    },
+    "b2": {
+      "type": "object",
+      "format": "buffer",
+      "maxLength": 65535
+    },
+    "b3": {
+      "type": "object",
+      "format": "buffer",
+      "maxLength": 255
+    },
+    "b4": {
+      "type": "object",
+      "format": "buffer",
+      "maxLength": 16777215
+    },
+    "b5": {
+      "type": "object",
+      "format": "buffer",
+      "maxLength": 4294967295
+    },
+    "t1": {
+      "type": "object",
+      "maxLength": 255
+    },
+    "t2": {
+      "type": "string",
+      "maxLength": 65535
+    },
+    "t3": {
+      "type": "object",
+      "maxLength": 255
+    },
+    "t4": {
+      "type": "string",
+      "maxLength": 16777215
+    },
+    "t5": {
+      "type": "string",
+      "maxLength": 4294967295
+    },
+    "e": {
+      "type": "string",
+      "enum": [
+        "v1",
+        "v2"
+      ]
+    },
+    "s": {
+      "type": "string"
+    }
+  }
+}
